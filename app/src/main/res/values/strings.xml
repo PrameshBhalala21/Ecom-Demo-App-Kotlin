@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">Ecom App</string>
+    <string name="app_name">E-com Demo App</string>
     <string name="navigation_drawer_open">Open navigation drawer</string>
     <string name="navigation_drawer_close">Close navigation drawer</string>
     <string name="nav_header_title">Android Studio</string>
@@ -20,4 +20,8 @@
     <string name="forgotpass">Forgot Your Password ?</string>
     <string name="create_an_account">Create an Account !</string>
     <string name="signin">Sign In</string>
+    <string name="add_to_cart">Add to Cart</string>
+    <string name="cannot_be_empty">Can not be empty !</string>
+    <string name="enter_valid_email_address">Enter valid email id !</string>
+    <string name="password_will_must_be_greater_than_six">Password must be greater than six !</string>
 </resources>

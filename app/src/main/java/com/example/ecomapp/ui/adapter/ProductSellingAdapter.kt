@@ -1,4 +1,4 @@
-package com.natureland.ui.fragments.homePage.adapter
+package com.example.ecomapp.ui.adapter
 
 import android.content.Context
 import android.graphics.Paint
@@ -11,15 +11,15 @@ import androidx.databinding.DataBindingUtil
 import androidx.recyclerview.widget.RecyclerView
 import com.bumptech.glide.Glide
 import com.bumptech.glide.request.RequestOptions
-import com.natureland.R
-import com.natureland.databinding.HorizontalProductRowBinding
-import com.natureland.ui.fragments.homePage.model.ProductSellingModel
+import com.example.ecomapp.R
+import com.example.ecomapp.databinding.HorizontalProductRowBinding
+import com.example.ecomapp.ui.model.ProductSellingModel
 
 
 class ProductSellingAdapter(
     val productDataList: ArrayList<ProductSellingModel>,
-    val mCon: Context,
-    var listeners: ClickListener?
+    val mCon: Context
+    /*,var listeners: ClickListener?*/
 ) : RecyclerView.Adapter<ProductSellingAdapter.ViewHolder>() {
 
     private lateinit var binding: HorizontalProductRowBinding
@@ -49,11 +49,15 @@ class ProductSellingAdapter(
         else
             holder.productRowBinding.linearLayoutNewTextView.visibility = View.GONE
 
+
+        if (productModel.isRemoveButton!!)
+            holder.productRowBinding.addToCartButton.visibility = View.GONE
+
         Glide.with(mCon)
             .load(productModel.productImageUrl)
             .apply(
                 RequestOptions()
-                    .placeholder(R.drawable.ic_natureland_logo)
+                    .placeholder(R.drawable.loading)
             )
             .into(holder.productRowBinding.productImageView)
 
@@ -66,11 +70,11 @@ class ProductSellingAdapter(
 
 
 //        main RelativeLayout onClick Listeners
-        holder.productRowBinding.mainRelativeLayout.setOnClickListener {
+       /* holder.productRowBinding.mainRelativeLayout.setOnClickListener {
 
             listeners?.onClick( productDataList[holder.getAdapterPos()])
 
-        }
+        }*/
 
 
         if (productModel.isDiscountProduct!!) {

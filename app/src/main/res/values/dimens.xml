@@ -5,4 +5,28 @@
     <dimen name="nav_header_vertical_spacing">8dp</dimen>
     <dimen name="nav_header_height">176dp</dimen>
     <dimen name="fab_margin">16dp</dimen>
+
+    <dimen name="font_size_level_one">16sp</dimen>
+    <dimen name="font_size_level_two">14sp</dimen>
+    <dimen name="font_size_level_three">12sp</dimen>
+    <dimen name="font_size_level_four">10sp</dimen>
+    <dimen name="font_size_level_five">8sp</dimen>
+
+
+    <dimen name="height_55">55dp</dimen>
+
+    <dimen name="padding_5">5dp</dimen>
+    <dimen name="padding_10">10dp</dimen>
+    <dimen name="padding_15">15dp</dimen>
+    <dimen name="padding_20">20dp</dimen>
+
+    <dimen name="margin_5">5dp</dimen>
+    <dimen name="margin_10">10dp</dimen>
+    <dimen name="margin_15">15dp</dimen>
+    <dimen name="margin_20">20dp</dimen>
+    <dimen name="margin_8">8dp</dimen>
+    <dimen name="padding_8">8dp</dimen>
+    <dimen name="app_padding_left">10dp</dimen>
+    <dimen name="padding_pdp_heading">6dp</dimen>
+    <dimen name="padding_pdp_layouts">4dp</dimen>
 </resources>

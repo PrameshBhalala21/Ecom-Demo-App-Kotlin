@@ -1,25 +1,28 @@
-package com.natureland.ui.fragments.homePage.model
+package com.example.ecomapp.ui.model
 
-import com.google.gson.annotations.SerializedName
 
 data class ProductSellingModel(
 
-    @SerializedName("productImageUrl") val productImageUrl: String? = null,
+    val productImageUrl: String? = null,
 
-    @SerializedName("productId") val productId: String? = null,
+    val productId: String? = null,
 
-    @SerializedName("productName") val productName: String? = null,
+    val productName: String? = null,
 
-    @SerializedName("productPrice") val productPrice: String? = null,
+    val productPrice: String? = null,
 
-    @SerializedName("productDiscountPrice") val productDiscountPrice: String? = null,
+    val productDiscountPrice: String? = null,
 
-    @SerializedName("productDiscountPercent") val productDiscountPercent: String? = null,
+    val productDiscountPercent: String? = null,
 
-    @SerializedName("productRating") val productRating: String? = null,
+    val productRating: String? = null,
 
-    @SerializedName("productNew") val isNewProduct: Boolean? = false,
+    val isNewProduct: Boolean? = false,
 
-    @SerializedName("discountProduct") val isDiscountProduct: Boolean? = false
+    val isDiscountProduct: Boolean? = false,
+
+    val isRemoveButton: Boolean? = false
+
+
 
 )

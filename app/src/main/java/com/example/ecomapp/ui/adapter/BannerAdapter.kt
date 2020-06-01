@@ -26,10 +26,7 @@ class BannerAdapter(val bannerDataList : ArrayList<BannerModel>, val mCon : Cont
 //        val view = LayoutInflater.from(parent.context).inflate(R.layout.horizontal_product_row, parent, false)
         binding = DataBindingUtil.inflate(LayoutInflater.from(parent.context), R.layout.banner_items,parent,false)
 
-
-
         var view = binding.root
-
 
         return ViewHolder(binding)
 
